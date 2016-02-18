@@ -87,7 +87,6 @@ module.exports = function(grunt) {
 <<<<<<< HEAD
 };
 =======
-};
 
 
 >>>>>>> a65ea9ca1b9edef0c4859894e2442c3ea5602795
