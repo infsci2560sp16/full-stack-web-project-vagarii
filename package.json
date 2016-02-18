@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "grunt-cli": "0.1.13"
+    "grunt-cli": "0.1.13",
+    "grunt": "~0.4.2"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
