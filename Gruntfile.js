@@ -84,9 +84,4 @@ module.exports = function(grunt) {
 
   // the default task can be run just by typing "grunt" on the command line
   grunt.registerTask('default', ['validation', 'jshint'/*, 'concat', 'uglify', 'cssmin'*/]);
-<<<<<<< HEAD
 };
-=======
-
-
->>>>>>> a65ea9ca1b9edef0c4859894e2442c3ea5602795

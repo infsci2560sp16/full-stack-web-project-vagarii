@@ -1,3 +1,4 @@
+
 {
   "name": "full-stack-web-project-vagarii",
   "version": "1.0.0",
@@ -12,29 +13,6 @@
     "grunt-contrib-qunit": "^0.7.0",
     "grunt-contrib-uglify": "~0.5.0",
     "grunt-contrib-watch": "^0.6.1",
-<<<<<<< HEAD
-    "grunt-w3c-html-validation": "^0.1.7",
-    "jshint": "^2.9.1"
-  },
-  "description": "A barebones Java app, which can easily be deployed to Heroku.",
-  "main": "Gruntfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/infsci2560sp16/full-stack-web-project-vagarii.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/infsci2560sp16/full-stack-web-project-vagarii/issues"
-  },
-  "homepage": "https://github.com/infsci2560sp16/full-stack-web-project-vagarii#readme"
-}
-=======
     "grunt-w3c-html-validation": "^0.1.7"
   }
 }
-
->>>>>>> a65ea9ca1b9edef0c4859894e2442c3ea5602795
