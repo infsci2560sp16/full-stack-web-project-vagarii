@@ -5,7 +5,6 @@
   
   "dependencies": {
     "grunt-cli": "0.1.13",
-    "grunt": "~0.4.2"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
