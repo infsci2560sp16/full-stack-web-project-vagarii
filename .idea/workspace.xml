@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="886bf619-814d-4f7a-82d2-3714786cf6b4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/full-stack-web-project-vagarii" afterPath="$PROJECT_DIR$/full-stack-web-project-vagarii" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/routes/step1.java" afterPath="$PROJECT_DIR$/src/main/java/routes/step1.java" />
     </list>
     <ignored path="helloworld.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,18 +39,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="step1.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="step1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/routes/step1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.772388">
-              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1490#1498#0" expanded="true" />
-                <marker date="1458754185000" expanded="true" signature="1232:1281" placeholder="CREATE TABLE... IF" />
-                <marker date="1458754185000" expanded="true" signature="1321:1353" placeholder="INSERT INTO ticks... " />
-                <marker date="1458754185000" expanded="true" signature="1407:1429" placeholder="SELECT tick ticks" />
+                <element signature="e#433#434#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#1449#1457#0" expanded="true" />
+                <marker date="1458755542000" expanded="true" signature="1191:1240" placeholder="CREATE TABLE... IF" />
+                <marker date="1458755542000" expanded="true" signature="1280:1312" placeholder="INSERT INTO ticks... " />
+                <marker date="1458755542000" expanded="true" signature="1366:1388" placeholder="SELECT tick ticks" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,16 +117,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="4.642857">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signup.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spark/template/freemarker/signup.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-30.535715">
-              <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -190,8 +194,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="275" />
-    <option name="y" value="179" />
+    <option name="x" value="558" />
+    <option name="y" value="34" />
     <option name="width" value="1053" />
     <option name="height" value="657" />
   </component>
@@ -778,15 +782,15 @@
       <created>1458681197675</created>
       <option name="number" value="Default" />
       <updated>1458681197675</updated>
-      <workItem from="1458681201284" duration="6999000" />
+      <workItem from="1458681201284" duration="8055000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6999000" />
+    <option name="totallyTimeSpent" value="8055000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="275" y="179" width="1053" height="657" extended-state="0" />
+    <frame x="558" y="34" width="1053" height="657" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -930,14 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spark/template/freemarker/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.75">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -948,17 +944,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spark/template/freemarker/index.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.75">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/routes/step1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.772388">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1490#1498#0" expanded="true" />
-            <marker date="1458754185000" expanded="true" signature="1232:1281" placeholder="CREATE TABLE... IF" />
-            <marker date="1458754185000" expanded="true" signature="1321:1353" placeholder="INSERT INTO ticks... " />
-            <marker date="1458754185000" expanded="true" signature="1407:1429" placeholder="SELECT tick ticks" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#1449#1457#0" expanded="true" />
+            <marker date="1458755542000" expanded="true" signature="1191:1240" placeholder="CREATE TABLE... IF" />
+            <marker date="1458755542000" expanded="true" signature="1280:1312" placeholder="INSERT INTO ticks... " />
+            <marker date="1458755542000" expanded="true" signature="1366:1388" placeholder="SELECT tick ticks" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -20,22 +20,23 @@ import com.heroku.sdk.jdbc.DatabaseUrl;
 
 public class step1 {
 
-    public static void main(String[] args) {
+    public step1() {
+        setupRoutes();
+    }
 
-        port(Integer.valueOf(System.getenv("PORT")));
-        staticFileLocation("/public");
+    private void setupRoutes() {
+        get("/hello", (req, res) -> "Hello World");
 
-        //get("/hello", (req, res) -> "Hello World");
+        get("/hi", (req, res) -> "Hi World");
 
-    get("/hello", (request, response) -> {
-            response.type("text/html");
+        get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
-            attributes.put("message", new Object());
+            attributes.put("message", "Hello World!!!!!");
 
-           return new ModelAndView(attributes, "index.ftl");
-       }, new FreeMarkerEngine());
+            return new ModelAndView(attributes, "index.ftl");
+        }, new FreeMarkerEngine());
 
-        get("/db", (req, res) -> {
+        get("/db.html", (req, res) -> {
             Connection connection = null;
             Map<String, Object> attributes = new HashMap<>();
             try {
@@ -60,8 +61,6 @@ public class step1 {
                 if (connection != null) try{connection.close();} catch(SQLException e){}
             }
         }, new FreeMarkerEngine());
-
     }
-
 }
 
