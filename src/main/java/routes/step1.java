@@ -30,7 +30,7 @@ public class step1 {
     get("/hello", (request, response) -> {
             response.type("text/html");
             Map<String, Object> attributes = new HashMap<>();
-            attributes.put("message", "Hello World!");
+            attributes.put("message", new Object());
 
            return new ModelAndView(attributes, "index.ftl");
        }, new FreeMarkerEngine());
