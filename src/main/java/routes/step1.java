@@ -29,7 +29,7 @@ public class step1 {
 
         get("/hi", (req, res) -> "Hi World");
 
-        get("/", (request, response) -> {
+        get("/h", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("message", "Hello World!!!!!");
 
