@@ -54,7 +54,7 @@ public class step1 {
                 return new ModelAndView(attributes, "db.ftl");
             } catch (Exception e) {
                 attributes.put("message", "There was an error: " + e);
-                return new ModelAndView(attributes, "signup.ftl");
+                return new ModelAndView(attributes, "error.ftl");
             } finally {
                 if (connection != null) try{connection.close();} catch(SQLException e){}
             }

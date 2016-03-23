@@ -42,13 +42,13 @@
       <file leaf-file-name="step1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/routes/step1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.21268657">
-              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.3544776">
+              <caret line="56" column="58" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
               <folding>
                 <element signature="e#1450#1458#0" expanded="true" />
-                <marker date="1458706266000" expanded="true" signature="1192:1241" placeholder="CREATE TABLE... IF" />
-                <marker date="1458706266000" expanded="true" signature="1281:1313" placeholder="INSERT INTO ticks... " />
-                <marker date="1458706266000" expanded="true" signature="1367:1389" placeholder="SELECT tick ticks" />
+                <marker date="1458706488000" expanded="true" signature="1192:1241" placeholder="CREATE TABLE... IF" />
+                <marker date="1458706488000" expanded="true" signature="1281:1313" placeholder="INSERT INTO ticks... " />
+                <marker date="1458706488000" expanded="true" signature="1367:1389" placeholder="SELECT tick ticks" />
               </folding>
             </state>
           </provider>
@@ -779,12 +779,12 @@
       <created>1458681197675</created>
       <option name="number" value="Default" />
       <updated>1458681197675</updated>
-      <workItem from="1458681201284" duration="6093000" />
+      <workItem from="1458681201284" duration="6329000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6093000" />
+    <option name="totallyTimeSpent" value="6329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="229" y="122" width="1053" height="657" extended-state="0" />
@@ -951,13 +951,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/routes/step1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.21268657">
-          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.3544776">
+          <caret line="56" column="58" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
           <folding>
             <element signature="e#1450#1458#0" expanded="true" />
-            <marker date="1458706266000" expanded="true" signature="1192:1241" placeholder="CREATE TABLE... IF" />
-            <marker date="1458706266000" expanded="true" signature="1281:1313" placeholder="INSERT INTO ticks... " />
-            <marker date="1458706266000" expanded="true" signature="1367:1389" placeholder="SELECT tick ticks" />
+            <marker date="1458706488000" expanded="true" signature="1192:1241" placeholder="CREATE TABLE... IF" />
+            <marker date="1458706488000" expanded="true" signature="1281:1313" placeholder="INSERT INTO ticks... " />
+            <marker date="1458706488000" expanded="true" signature="1367:1389" placeholder="SELECT tick ticks" />
           </folding>
         </state>
       </provider>
