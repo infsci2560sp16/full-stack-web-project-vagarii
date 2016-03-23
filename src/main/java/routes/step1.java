@@ -25,9 +25,9 @@ public class step1 {
         port(Integer.valueOf(System.getenv("PORT")));
         staticFileLocation("/public");
 
-        get("/hello", (req, res) -> "Hello World");
+        //get("/hello", (req, res) -> "Hello World");
 
-    get("/", (request, response) -> {
+    get("/hello", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("message", "Hello World!");
 
