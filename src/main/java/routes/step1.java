@@ -28,6 +28,7 @@ public class step1 {
         //get("/hello", (req, res) -> "Hello World");
 
     get("/hello", (request, response) -> {
+            response.type("text/html");
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("message", "Hello World!");
 
