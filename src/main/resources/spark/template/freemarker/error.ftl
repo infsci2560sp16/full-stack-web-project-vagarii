@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <#include "header.ftl">
+<#include "header.ftl">
 </head>
 
 <body>
 
-  <#include "nav.ftl">
+<#include "nav.ftl">
 
 <div class="container">
-  ${message}
+${message}
 </div>
 
 </body>
