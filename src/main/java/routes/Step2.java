@@ -1,74 +1,110 @@
 package routes;
 
+import com.google.gson.Gson;
+import spark.ModelAndView;
+import spark.template.freemarker.FreeMarkerEngine;
+
+import java.text.SimpleDateFormat;
+import java.util.*;
+
+import static spark.Spark.get;
+import static spark.Spark.post;
+
 /**
  * Created by XINLAI on 3/22/16.
  */
-import java.sql.*;
-import java.util.HashMap;
-import java.util.ArrayList;
-import java.util.Map;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-
-import static spark.Spark.*;
-import spark.template.freemarker.FreeMarkerEngine;
-import spark.ModelAndView;
-import static spark.Spark.get;
-
-import com.heroku.sdk.jdbc.DatabaseUrl;
 
 public class Step2 {
 
-    public static void main(String[] args) {
+    Gson gson = new Gson();
 
-        port(Integer.valueOf(System.getenv("PORT")));
-        staticFileLocation("/public");
-
-        get("/hello", (req, res) -> "Hello World");
-        get("/index", (req, res) -> {
-            res.type("text/html");
-            Map<String, Object> attributes = new HashMap<>();
-            attributes.put("index", "Hello World!");
-            return new ModelAndView(attributes, "index.ftl");
-        });
-
-//    get("/", (request, response) -> {
-//            Map<String, Object> attributes = new HashMap<>();
-//            attributes.put("message", "Hello World!");
-//
-//           return new ModelAndView(attributes, "index.ftl");
-//       }, new FreeMarkerEngine());
-
-        get("/db", (req, res) -> {
-            Connection connection = null;
-            Map<String, Object> attributes = new HashMap<>();
-            try {
-                connection = DatabaseUrl.extract().getConnection();
-
-                Statement stmt = connection.createStatement();
-                stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks (tick timestamp)");
-                stmt.executeUpdate("INSERT INTO ticks VALUES (now())");
-                ResultSet rs = stmt.executeQuery("SELECT tick FROM ticks");
-
-                ArrayList<String> output = new ArrayList<String>();
-                while (rs.next()) {
-                    output.add("Read from DB: " + rs.getTimestamp("tick"));
-                }
-
-                attributes.put("results", output);
-                return new ModelAndView(attributes, "db.ftl");
-            } catch (Exception e) {
-                attributes.put("message", "There was an error: " + e);
-                return new ModelAndView(attributes, "signup.ftl");
-            } finally {
-                if (connection != null) try {
-                    connection.close();
-                } catch (SQLException e) {
-                }
-            }
-        }, new FreeMarkerEngine());
+    public Step2() {
+        setupRoutes();
     }
+
+    private void setupRoutes() {
+
+        get("/loop", (request, response) -> {
+            Map<String, Object> attributes = new HashMap<>();
+            List paragraph =new ArrayList();
+            int k = 10;
+            for (int i=0; i<k; i++) {
+                paragraph.add("Sharing the footprint of every journey you take and tell us the unique story and meaningful pic.");
+            }
+            attributes.put("paragraph", paragraph);
+
+            return new ModelAndView(attributes, "about.ftl");
+        }, new FreeMarkerEngine());
+
+        get("/index", (req, res) -> {
+            Map<String, Object> attributes = new HashMap<>();
+
+            SimpleDateFormat formatter = new SimpleDateFormat("EEEE");
+            SimpleDateFormat formatter1 = new SimpleDateFormat("yyyy-MM-dd");
+            String dayOfWeek = formatter.format(new Date());
+            String dayOfTime = formatter1.format(new Date());
+            attributes.put("dayOfTime", dayOfTime);
+            attributes.put("dayOfWeek", dayOfWeek);
+
+            return new ModelAndView(attributes, "index.ftl");
+        }, new FreeMarkerEngine());
+
+        /*post("/api/add_copyright", (req, res) -> {
+            String info = req.queryParams("info");
+
+            Map<String, Object> data = new HashMap<>();
+            data.put("info", info);
+            data.put("status", "OK");
+            return data;
+        }, gson::toJson);
+
+        get("/api/copyright", (req, res) -> {
+            Map<String, Object> data = new HashMap<>();
+            data.put("Name", "Xin");
+            data.put("Phone", "412-652-7800");
+            data.put("Email", "xil154@pitt.edu");
+            return data;
+        }, gson::toJson);*/
+
+        get("/api/my_info", (req, res) -> {
+            Map<String, Object> data = new HashMap<>();
+            data.put("Name", "Author: Barbara Lai");
+            data.put("Phone", "Phone: 000-652-7800");
+            data.put("Email", "Email: xil154@pitt.edu");
+            return data;
+        }, gson::toJson);
+
+
+        post("/api/add_music_info", (req, res) -> {
+            String info = req.queryParams("info");
+
+            Map<String, Object> data = new HashMap<>();
+            data.put("info", info);
+            data.put("status", "OK");
+            return data;
+        }, gson::toJson);
+
+        /*get("/api/copyright", (req, res) -> {
+            Map<String, Object> data = new HashMap<>();
+            data.put("copyright", new Date());
+            return data;
+        }, gson::toJson);*/
+
+        class MyInfo {
+            public String Name;
+            public String Phone;
+            public String Email;
+
+            public MyInfo(String a, String p, String e) {
+                Name = a;
+                Phone = p;
+                Email = e;
+            }
+        }
+
+    }
+
 }
 
 

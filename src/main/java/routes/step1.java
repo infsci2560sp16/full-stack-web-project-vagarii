@@ -39,6 +39,7 @@ public class step1 {
         get("/db.html", (req, res) -> {
             Connection connection = null;
             Map<String, Object> attributes = new HashMap<>();
+
             try {
                 connection = DatabaseUrl.extract().getConnection();
 

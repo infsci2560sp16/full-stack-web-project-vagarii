@@ -14,7 +14,30 @@
           <div class="col-lg-12">
               <div class="intro-message">
                   <h1>Welcome</h1>
-                  <h3>Tell us your story</h3>
+                  <div id="current-time"></div>
+
+
+                          <h3>${dayOfTime}</h3>
+                          <h3>${dayOfWeek}</h3>
+                              <#if dayOfWeek == "Monday">
+                                      <div class="notification">Tell us your story</div>
+
+                              <#elseif dayOfWeek == "Tuesday,">
+                                      <div class="notification">Tell us your story</div>
+
+                              <#elseif dayOfWeek == "Wednesday">
+                                      <div class="notification">Tell us your story</div>
+
+                              <#elseif dayOfWeek == "Thursday">
+                                      <div class="notification">Tell us your story</div>
+
+                              <#elseif dayOfWeek == "Friday">
+                                      <div class="notification">Tell us your story</div>
+
+                              <#else>
+                                      <div class="notification">Happy weekend!</div>
+
+                              </#if>
                   <hr class="intro-divider">
                   <ul class="list-inline intro-social-buttons">
                       <li>
@@ -58,7 +81,6 @@
       </div>
   </div>
 </footer>
-
 
 </body>
 </html>

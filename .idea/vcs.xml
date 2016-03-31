@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/full-stack-web-project-vagarii" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/full-stack-web-project-vagarii/boiling-woodland-61730" vcs="Git" />
   </component>
 </project>
