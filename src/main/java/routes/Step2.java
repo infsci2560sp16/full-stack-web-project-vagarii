@@ -60,10 +60,10 @@ public class Step2 {
             Connection connection = null;
             Map<String, Object> data = new HashMap<>();
         try {
-            connection = DatabaseUrl.extract().getConnection();
+            //connection = DatabaseUrl.extract().getConnection();
 
-            Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT Name, Phone, Emial FROM users");
+            //Statement stmt = connection.createStatement();
+            //ResultSet rs = stmt.executeQuery("SELECT Name, Phone, Emial FROM users");
 
             data.put("Name", "Author: Barbara Lai");
             data.put("Phone", "Phone: 000-652-7800");
