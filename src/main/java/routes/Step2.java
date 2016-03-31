@@ -37,7 +37,7 @@ public class Step2 {
             return new ModelAndView(attributes, "about.ftl");
         }, new FreeMarkerEngine());
 
-        get("/index", (req, res) -> {
+        get("/hello", (req, res) -> {
             Map<String, Object> attributes = new HashMap<>();
 
             SimpleDateFormat formatter = new SimpleDateFormat("EEEE");
@@ -50,22 +50,6 @@ public class Step2 {
             return new ModelAndView(attributes, "index.ftl");
         }, new FreeMarkerEngine());
 
-        /*post("/api/add_copyright", (req, res) -> {
-            String info = req.queryParams("info");
-
-            Map<String, Object> data = new HashMap<>();
-            data.put("info", info);
-            data.put("status", "OK");
-            return data;
-        }, gson::toJson);
-
-        get("/api/copyright", (req, res) -> {
-            Map<String, Object> data = new HashMap<>();
-            data.put("Name", "Xin");
-            data.put("Phone", "412-652-7800");
-            data.put("Email", "xil154@pitt.edu");
-            return data;
-        }, gson::toJson);*/
 
         get("/api/my_info", (req, res) -> {
             Map<String, Object> data = new HashMap<>();
@@ -85,11 +69,6 @@ public class Step2 {
             return data;
         }, gson::toJson);
 
-        /*get("/api/copyright", (req, res) -> {
-            Map<String, Object> data = new HashMap<>();
-            data.put("copyright", new Date());
-            return data;
-        }, gson::toJson);*/
 
         class MyInfo {
             public String Name;
