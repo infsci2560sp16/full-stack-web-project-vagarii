@@ -10,7 +10,9 @@ import java.io.StringWriter;
 import java.util.*;
 import java.util.stream.Collectors;
 import lombok.Data;
+import routes.Article;
 import routes.Step2;
+import routes.Step3;
 
 
 public class Main {
@@ -23,7 +25,8 @@ public class Main {
     //Object r = new Week7Routes();
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
-    Object r = new Step2();
+    //Object r = new Step2();
+    Object r = new Step3();
 
 
   }
