@@ -26,7 +26,7 @@ public class Main {
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
     //Object r = new Step2();
-    Object r = new Step3();
+    Object r = new Step2();
 
 
   }
